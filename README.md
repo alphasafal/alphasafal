@@ -1,232 +1,460 @@
-<!-- HEADER -->
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=120&section=header&animation=fadeIn" width="100%"/>
+# Safal Gupta
 
-```
-╔══════════════════════════════════════════════════════════════════╗
-║                                                                  ║
-║   S A F A L   G U P T A                                          ║
-║   Systems · AI Infrastructure · Quantitative Engineering         ║
-║                                                                  ║
-║   "I don't build features. I build the substrate others         ║
-║    build features on."                                           ║
-║                                                                  ║
-╚══════════════════════════════════════════════════════════════════╝
-```
+### Building AI, Robotics & Distributed Systems
 
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&pause=1200&color=A78BFA&center=true&vCenter=true&width=700&lines=Systems+Engineer+%7C+AI+Infrastructure;Quant+Research+%7C+Low-Latency+Systems;Building+things+that+scale+to+the+edge+of+reason;VIT+Vellore+%E2%86%92+Next%3A+Jane+Street+%2F+DeepMind+%2F+Own+Fund" alt="Typing SVG" />
-</a>
+**Physical AI • Robotics Software • AI Systems • Distributed Systems**
 
-<br/>
+Final-year Computer Science (IoT) student at **VIT Vellore**.
 
-[![Profile Views](https://komarev.com/ghpvc/?username=safalgupta&style=for-the-badge&color=7c3aed&labelColor=0d0d0d)]((https://github.com/alphasafal))
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-7c3aed?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d0d0d)](https://www.linkedin.com/in/safal-gupta/)
-[![Email](https://img.shields.io/badge/Email-Reach_Out-7c3aed?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d0d0d)](mailto:safallovetocode@gmail.com)
+I build systems that move from ideas and algorithms to working software — with a growing focus on intelligent systems that can perceive, reason and act in the real world.
+
+<br>
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Safal_Gupta-0A66C2?style=flat-square\&logo=linkedin)](https://www.linkedin.com/in/safal-gupta/)
+[![GitHub](https://img.shields.io/badge/GitHub-alphasafal-181717?style=flat-square\&logo=github)](https://github.com/alphasafal)
 
 </div>
 
 ---
 
-## The Orientation
+## What I'm Focused On
 
-I am a third-year Computer Science student at VIT Vellore, building at the intersection of **AI systems**, **quantitative modeling**, and **high-performance infrastructure**. I do not chase frameworks — I study the mechanics beneath them.
+My long-term direction is **Physical AI and Robotics Systems**.
 
-My thinking is shaped by one constraint: **systems that work at 10x scale should have been designed that way from day one**. This forces a level of architectural clarity that most engineers never reach because they never need to.
+I'm particularly interested in the engineering stack required to build intelligent machines:
 
-I work on problems where the interesting part is not *what* to build — but *how* the underlying abstractions determine whether the thing survives contact with reality.
-
----
-
-## Engineering Philosophy
-
-> *Most engineers optimize for feature delivery. I optimize for the surface area of change — the fewer places a system has to be touched when requirements shift, the more correct its design was to begin with.*
-
-Three principles I hold without compromise:
-
-**1. Abstraction is a debt instrument.**
-Every abstraction you introduce is a loan against future complexity. If you cannot name the exact invariant an abstraction preserves, you have not earned the right to introduce it.
-
-**2. Latency is a design decision, not a performance problem.**
-Systems that are slow were designed to be slow. By the time you are profiling, you have already lost. The bottleneck is architectural, and you should have seen it in the data flow diagram.
-
-**3. Intelligence without interpretability is liability.**
-An ML model in production that cannot be reasoned about under distribution shift is not an asset — it is a time bomb. I build systems where behavior is explainable by construction, not by post-hoc inspection.
-
----
-
-## Active Research Interests
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│  DOMAIN                   SPECIFIC QUESTION                      │
-├─────────────────────────────────────────────────────────────────┤
-│  Market Microstructure    When does order book imbalance carry   │
-│                           predictive signal vs. noise injection? │
-├─────────────────────────────────────────────────────────────────┤
-│  ML Systems               How do you design serving infra for    │
-│                           models with heterogeneous latency SLAs?│
-├─────────────────────────────────────────────────────────────────┤
-│  Distributed Systems      What is the minimal coordination cost  │
-│                           for consensus in geo-distributed writes?│
-├─────────────────────────────────────────────────────────────────┤
-│  Reinforcement Learning   Can RL agents learn stable policies    │
-│                           in non-stationary reward landscapes    │
-│                           without reward model retraining?       │
-└─────────────────────────────────────────────────────────────────┘
+```text
+Perception
+    ↓
+Localization
+    ↓
+Planning
+    ↓
+Decision Making
+    ↓
+Control
+    ↓
+Real-World Action
 ```
 
----
+Alongside robotics, I work on AI infrastructure, distributed systems and Web3 infrastructure because many of the underlying engineering problems overlap:
 
-## High-Impact Projects
-
-> Each project here solves a problem that was genuinely hard. The test I apply: *would removing any component of this system cause a non-obvious failure?* If no, the architecture is too shallow.
-
----
-
-### `ARCA` — Adaptive Regime-Conditioned Allocation Engine
-**[Status: Active Development]**
-
-A quantitative portfolio management system that models market regimes as latent states and dynamically reweights allocation strategies based on real-time regime probability. Not a prediction model — a **decision engine** that degrades gracefully under uncertainty.
-
-- Regime detection via Hidden Markov Models + online Bayesian updates
-- Multi-strategy blending with Sharpe-normalized weights
-- Execution layer with slippage modeling and transaction cost awareness
-- Backtested on 10+ years of equity/futures data with walk-forward validation
-
-`Python` `C++ (execution core)` `PyTorch` `Kafka` `TimescaleDB`
+* concurrency
+* networking
+* state
+* consensus
+* fault tolerance
+* real-time systems
+* distributed coordination
+* performance engineering
 
 ---
 
-### `NEXUS` — Low-Latency ML Inference Router
-**[Status: Design Phase]**
+## Currently Building
 
-Production inference infrastructure that routes requests across heterogeneous model backends (GPU clusters, CPU inference, quantized edge models) based on real-time latency budgets and confidence thresholds. The insight: **not every request deserves a 70B parameter model**.
+### 🤖 Autonomous Robot Stack
 
-- Sub-millisecond routing decisions using a lightweight classifier
-- Cascaded inference: fast model first, escalate on low-confidence
-- gRPC-based inter-service communication with custom load balancing
-- Observable by design: every routing decision is logged with reason
+Building an autonomous mobile robot stack from first principles.
 
-`Go` `C++` `ONNX Runtime` `gRPC` `Prometheus` `Kubernetes`
-
----
-
-### `KIRA` — Kernel-Level Intrusion Response Agent
-**[Status: Research Prototype]**
-
-A behavioral anomaly detection system that instruments Linux kernel syscall traces to detect zero-day intrusions without signature databases. The model learns normal process behavior at the syscall graph level and flags structural deviations.
-
-- eBPF-based syscall tracing with minimal overhead (< 2% CPU)
-- Graph neural network on process interaction graphs
-- Real-time alert generation with kill-chain attribution
-
-`Rust` `eBPF` `PyTorch Geometric` `Linux Kernel` `Redis`
-
----
-
-### `LOOM` — Distributed Feature Store for Online ML
-**[Status: Open Source]**
-
-A feature computation and serving platform designed for teams running ML models where **feature freshness directly impacts revenue**. Handles the hard problems: point-in-time correctness, backfilling, and online/offline consistency.
-
-- Dual-write architecture for low-latency online serving and batch training
-- Time-travel queries for reproducible training data
-- Schema registry with backward-compatible evolution
-
-`Python` `Apache Flink` `Redis` `PostgreSQL` `Avro`
-
----
-
-## Technical Stack
-
+```text
+Sensors
+   ↓
+Perception
+   ↓
+Localization
+   ↓
+Mapping
+   ↓
+Path Planning
+   ↓
+Motion Control
+   ↓
+Robot
 ```
-SYSTEMS LAYER
-├── Languages       C++17/20 · Rust · Go · Python 3.11+
-├── Concurrency     POSIX Threads · Tokio · std::async
-├── Networking      TCP/IP internals · gRPC · ZeroMQ · RDMA (learning)
-└── OS              Linux (eBPF, cgroups, namespaces) · NUMA-aware design
 
-AI / ML LAYER
-├── Frameworks      PyTorch · JAX · scikit-learn
-├── Serving         TorchServe · ONNX Runtime · TensorRT
-├── Research        Transformers · RL (PPO, SAC) · GNNs · Bayesian methods
-└── MLOps           MLflow · DVC · Weights & Biases
+**Learning / Using**
 
-QUANT LAYER
-├── Modeling        Time-series analysis · HMM · Stochastic processes
-├── Execution       Order book modeling · Market impact · Slippage estimation
-└── Backtesting     Walk-forward validation · Monte Carlo simulation
+`C++` `Python` `ROS 2` `Nav2` `Gazebo` `RViz` `OpenCV` `Linux`
 
-INFRASTRUCTURE LAYER
-├── Cloud           AWS (EC2, EKS, SageMaker, Kinesis) · GCP (GKE)
-├── Orchestration   Kubernetes · Terraform · Helm
-├── Data            Kafka · Flink · TimescaleDB · Redis · S3
-└── Observability   Prometheus · Grafana · OpenTelemetry
+Current milestones:
+
+* [ ] ROS 2 nodes, topics, services and actions
+* [ ] Differential-drive robot simulation
+* [ ] Odometry and coordinate transforms
+* [ ] SLAM
+* [ ] Autonomous navigation
+* [ ] Dynamic obstacle avoidance
+* [ ] Camera / LiDAR perception
+* [ ] Natural-language task planning
+* [ ] Physical robot deployment
+
+The goal is to progressively move from:
+
+```text
+Simulation
+    ↓
+Autonomous Navigation
+    ↓
+Perception
+    ↓
+AI Planning
+    ↓
+Embodied AI
 ```
 
 ---
 
-## GitHub Activity
+## Experience
+
+### Industrial Digitalization Intern — JCB India
+
+Worked on software systems for industrial and manufacturing workflows.
+
+### SOP Management Platform
+
+Built a full-stack system for managing Standard Operating Procedures with:
+
+* revision and version management
+* approval workflows
+* role-based access control
+* department-level isolation
+* document lifecycle management
+* search and retrieval
+* auditability
+* PDF / document workflows
+
+**Tech**
+
+`Next.js` `React` `TypeScript` `PostgreSQL` `Prisma` `Redis`
+
+### Equipment Handover Management Platform
+
+Built a workflow platform for cross-department equipment handovers and sequential approvals.
+
+The system included:
+
+* department-based approvals
+* workflow state management
+* revision and rejection cycles
+* dashboards
+* approval history
+* notifications
+* structured audit trails
+
+**Tech**
+
+`Microsoft Power Apps` `SharePoint` `Power Automate`
+
+This internship gave me experience working with real users, operational requirements, security constraints and production-oriented workflows.
+
+---
+
+# Selected Work
+
+## 🌐 Distributed Systems
+
+I am exploring how reliable systems coordinate state across machines.
+
+Areas I'm studying and implementing:
+
+```text
+Replication
+Consensus
+Leader Election
+Partitioning
+Sharding
+WAL
+SSTables
+Distributed Transactions
+Failure Recovery
+```
+
+### Mini Spanner
+
+An educational distributed database project designed around:
+
+```text
+Client
+  ↓
+Router
+  ↓
+Shards
+  ↓
+Raft Replication
+  ↓
+Write-Ahead Log
+  ↓
+Storage Engine
+```
+
+Goal: understand distributed databases by implementing their fundamental components instead of treating them as black boxes.
+
+---
+
+## ₿ Web3 Systems
+
+I approach Web3 primarily as a **distributed systems + cryptography problem**.
+
+Areas of interest:
+
+* consensus
+* distributed execution
+* cryptographic verification
+* smart-contract runtimes
+* Solana architecture
+* Ethereum architecture
+* zero-knowledge systems
+* decentralized infrastructure
+
+### Executable Bitcoin Whitepaper
+
+Turning concepts from the Bitcoin whitepaper into interactive explanations and executable simulations.
+
+The project explores:
+
+```text
+Transactions
+    ↓
+Digital Signatures
+    ↓
+Blocks
+    ↓
+Proof of Work
+    ↓
+Longest Chain
+    ↓
+Distributed Consensus
+```
+
+Rather than only explaining the paper, the goal is to make its mechanisms observable and interactive.
+
+---
+
+## 🧠 AI Systems
+
+I am interested in AI beyond model APIs — especially the systems required to make models useful in production.
+
+Current interests include:
+
+* model inference
+* agents
+* evaluation
+* retrieval systems
+* multimodal AI
+* edge AI
+* ML infrastructure
+* AI + robotics
+* embodied intelligence
+
+---
+
+## 🌱 Carbon-Aware AI Systems
+
+Research-driven exploration of:
+
+* carbon-aware workload scheduling
+* energy prediction
+* green AI infrastructure
+* compute optimization
+
+Repository:
+
+[carbon-aware-ai-systems](https://github.com/alphasafal/carbon-aware-ai-systems)
+
+---
+
+# Engineering Stack
+
+### Languages
+
+`C++` `Python` `Rust` `Go` `Java` `TypeScript`
+
+### Robotics
+
+`ROS 2` `Nav2` `Gazebo` `RViz` `OpenCV`
+
+Currently expanding this stack through hands-on robotics projects.
+
+### AI / ML
+
+`PyTorch` `scikit-learn` `Computer Vision` `LLM Systems`
+
+### Backend / Systems
+
+`Next.js` `Node.js` `PostgreSQL` `Redis` `REST APIs` `Docker`
+
+### Distributed Systems
+
+`Networking` `Consensus` `Replication` `Sharding` `Fault Tolerance`
+
+### Web3
+
+`Solana` `Blockchain Fundamentals` `Smart Contracts` `Cryptography`
+
+### Tools
+
+`Linux` `Git` `GitHub` `Docker` `Postman`
+
+---
+
+# What I'm Learning
+
+I'm currently going deeper into:
+
+```text
+Modern C++
+Linux Systems Programming
+ROS 2
+Robot Kinematics
+SLAM
+Localization
+Navigation
+Computer Vision
+Controls
+Distributed Systems
+ML Systems
+```
+
+I prefer learning through this cycle:
+
+```text
+Study
+  ↓
+Implement
+  ↓
+Break
+  ↓
+Measure
+  ↓
+Understand
+  ↓
+Document
+  ↓
+Ship
+```
+
+---
+
+# Build in Public
+
+I document what I learn and build across several engineering series.
+
+### Monday — CS Fundamentals
+
+Understanding what happens underneath production systems.
+
+### Tuesday — Practical AI
+
+Making AI useful beyond prompting.
+
+### Wednesday — 0 → Production
+
+Taking systems from idea to working software.
+
+### Thursday — Engineering Mental Models
+
+How to reason about systems, tradeoffs and architecture.
+
+### Friday — Web3 Systems
+
+Consensus, cryptography, blockchains and decentralized infrastructure.
+
+### Saturday — Physical AI
+
+Documenting my journey from software engineering → robotics → embodied intelligence.
+
+---
+
+# What I Care About
+
+I enjoy engineering problems where multiple areas of computer science meet.
+
+For example:
+
+```text
+Robotics
+=
+AI
++
+Systems
++
+Networking
++
+Control
++
+Computer Vision
++
+Real-Time Software
+```
+
+or:
+
+```text
+Distributed Databases
+=
+Algorithms
++
+Networking
++
+Concurrency
++
+Storage
++
+Consensus
++
+Failure Recovery
+```
+
+Those intersections are where I like to work.
+
+---
+
+# Current Goal
+
+I'm currently preparing for **2027 internship opportunities** in areas such as:
+
+* Robotics Software Engineering
+* Physical AI
+* Autonomous Systems
+* AI / ML Systems
+* Software Engineering
+* Backend / Infrastructure
+* Distributed Systems
+* Computer Vision
+* Edge AI
+
+I'm especially interested in teams working on systems where software interacts with the physical world.
+
+---
+
+# GitHub Activity
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=safalgupta&show_icons=true&theme=midnight-purple&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d0d0d&title_color=a78bfa&icon_color=7c3aed&text_color=c4b5fd"/>
+<img src="https://github-readme-stats.vercel.app/api?username=alphasafal&show_icons=true&hide_border=true" height="165">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=safalgupta&layout=compact&theme=midnight-purple&hide_border=true&bg_color=0d0d0d&title_color=a78bfa&text_color=c4b5fd&langs_count=8"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=alphasafal&layout=compact&hide_border=true" height="165">
 
 </div>
 
-<div align="center">
+---
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=safalgupta&theme=midnight-purple&hide_border=true&background=0d0d0d&stroke=7c3aed&ring=a78bfa&fire=c4b5fd&currStreakLabel=a78bfa&sideNums=c4b5fd&sideLabels=7c3aed&dates=555555"/>
+# Connect
 
-</div>
+If you're working on robotics, Physical AI, autonomous systems, AI infrastructure, distributed systems or technically ambitious products, I'd be happy to connect.
 
-<div align="center">
+**LinkedIn:**
+https://www.linkedin.com/in/safal-gupta/
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=safalgupta&theme=react-dark&bg_color=0d0d0d&color=a78bfa&line=7c3aed&point=c4b5fd&hide_border=true"/>
-
-</div>
+**GitHub:**
+https://github.com/alphasafal
 
 ---
 
-## Principles of Work
-
-I operate by a small set of non-negotiable standards that determine how I engage with any technical problem:
-
-**Read the source, not the docs.**
-Documentation describes intended behavior. Source code describes actual behavior. For anything that matters, I read the implementation.
-
-**Benchmark before you claim.**
-A performance claim without numbers is a story. I measure, plot, and question the measurement before I state it as fact.
-
-**Design for the failure mode, not the happy path.**
-The happy path is the least interesting thing about a system. The most important question in any design review is: *what does this look like when it breaks, and is that failure recoverable?*
-
-**Finish what you start.**
-A half-built system with clean architecture is worth less than a working system with rough edges. Shipping is a skill. Polish is a skill. The combination is rare.
-
----
-
-## Currently
-
-- Building `ARCA` — regime-conditioned allocation engine
-- Reading: *Designing Data-Intensive Applications* (Kleppmann) · *The Elements of Statistical Learning* · Lamport's distributed systems papers
-- Exploring: eBPF internals · JAX autodiff mechanics · FPGA basics for HFT pipelines
-- Target: Research internship / quant role (Summer 2025) — open to conversations
-
----
-
-## Contact
-
-Reach me if you are working on something genuinely difficult in AI systems, quantitative research, or distributed infrastructure. I am not interested in adding features to CRUDs — I am interested in problems where the design space is not obvious.
-
-`safal[at]domain.com` · [LinkedIn]((https://www.linkedin.com/in/safal-gupta/)) · [Twitter/X](https://x.com/safalgupta)
-
-<br/>
-
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=80&section=footer" width="100%"/>
+
+### Build. Measure. Understand. Ship.
+
 </div>
