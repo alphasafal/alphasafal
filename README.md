@@ -1,183 +1,28 @@
-```md
-# Hi, I'm Safal Gupta
+# Safal Gupta
 
-**AI Engineer · ML Systems · Applied Research · Software Engineering**
+**AI systems engineer in the making.** I build tools that expose how a system works: its state, failure modes, and evidence that it behaves as intended.
 
-I build AI systems from first principles — from models and retrieval infrastructure to agents, developer tools, and production software.
+Computer Science at **VIT Vellore** · Based in India · Interested in AI infrastructure, evaluation, distributed systems, and robotics.
 
-Currently studying Computer Science at **VIT Vellore** and exploring the engineering behind modern AI systems.
+![Animated terminal showing Safal's engineering workflow: build, evaluate, inspect, ship](assets/terminal.gif)
 
----
+### Open the source
 
-### What I'm working on
+| Project | What it explores |
+| --- | --- |
+| [AI Eval Engineering](https://github.com/alphasafal/ai-eval-engineering) | A TypeScript evaluation harness for prompts and agents, with graders, trajectory metrics, cost and latency tracking, and release gates. |
+| [Production Agent Skills](https://github.com/alphasafal/production-agent-skills) | Eight portable engineering, data, and product skills with validation and evaluation cases. |
+| [Exchange Core](https://github.com/alphasafal/exchange-core) | A C++20 limit order book with pre-trade risk, a write-ahead journal, deterministic replay, and network gateways. |
+| [SAAYA VERIFY](https://github.com/alphasafal/saaya-verify) | An evidence-led cooling shelter research concept and tabletop fabrication candidate. |
 
-- Building **LLM systems, RAG pipelines and AI agents**
-- Studying **vector databases, ANN search and retrieval systems**
-- Exploring **efficient ML systems and Edge AI**
-- Building infrastructure-oriented projects in **distributed systems**
-- Reproducing and implementing ideas from recent AI research papers
-- Contributing more deeply to open-source AI infrastructure
+### Current focus
 
----
+- **AI systems:** evaluation, retrieval, agents, and efficient inference.
+- **Systems engineering:** deterministic behavior, observability, storage, and distributed systems.
+- **Robotics:** connecting software decisions to the physical world.
 
-### Areas I'm interested in
-
-```text
-Machine Learning
-Deep Learning
-LLMs
-AI Agents
-Retrieval Systems
-Vector Databases
-Distributed Systems
-Edge AI
-ML Infrastructure
-AI Systems Research
-```
-
----
-
-### Selected Projects
-
-#### 🔹 AI Developer Workspace
-An intelligent workspace manager for developers working on storage-constrained machines.
-
-Automatically understands projects, archives inactive work, manages local storage and keeps development environments lightweight.
-
-`AI Agents` `System Design` `macOS` `Developer Tools`
-
----
-
-#### 🔹 Mini Spanner
-A distributed database project built to understand how modern databases work internally.
-
-Exploring:
-
-```text
-Client → Router → Shards → Raft → WAL → SSTables
-```
-
-Focused on replication, consensus, durability and distributed storage.
-
----
-
-#### 🔹 Jewellery Digital Twin Engine
-A real-time 3D commerce engine for jewellery.
-
-Built around physically based rendering, realistic metals, gemstone optics and interactive product customization.
-
-`TypeScript` `WebGL` `Three.js` `PBR`
-
----
-
-#### 🔹 Industrial Digitalization Platform
-Built during my internship at **JCB India**.
-
-Designed production systems for SOP management, approval workflows and industrial process digitization.
-
-`Next.js` `PostgreSQL` `Prisma` `Redis` `Power Platform`
-
----
-
-### Learning AI from the inside out
-
-Instead of only using AI libraries, I'm trying to understand how the underlying systems work.
-
-Some things I'm studying/building:
-
-```text
-Tokenizer
-    ↓
-Embeddings
-    ↓
-Vector Search
-    ↓
-Retrieval
-    ↓
-Transformer
-    ↓
-LLM
-    ↓
-Tool Calling
-    ↓
-Agent
-    ↓
-Evaluation
-    ↓
-Production AI System
-```
-
-My goal is to be able to **build, debug and optimize every layer**.
-
----
-
-### Tech
-
-**Languages**
-
-`Python` `C++` `Java` `Rust` `Go` `TypeScript`
-
-**AI / ML**
-
-`PyTorch` `scikit-learn` `Transformers` `LLMs` `RAG` `Vector Search`
-
-**Systems**
-
-`PostgreSQL` `Redis` `Docker` `Linux` `Git` `AWS`
-
-**Web**
-
-`Next.js` `React` `Node.js`
-
----
-
-### Current research interests
-
-- Retrieval-Augmented Generation
-- Approximate Nearest Neighbor Search
-- Agent memory
-- Efficient inference
-- Small language models
-- Multimodal AI
-- Edge AI
-- Distributed ML infrastructure
-- AI evaluation
-- Long-context systems
-
----
-
-### Current objective
-
-I'm spending this phase of my career doing one thing:
-
-> **Build enough serious systems that my GitHub explains my engineering ability before my résumé does.**
-
----
+I learn by building the underlying pieces, testing them, and making the tradeoffs visible. My recent work spans Python, C++, TypeScript, and full-stack tools.
 
 ### Connect
 
-[LinkedIn](https://www.linkedin.com/in/safal-gupta/) · [X / Twitter](https://x.com/Safallovetocode) · [Portfolio]((https://www.safalgupta.tech))
-
-```
-
-
-A few things would make this substantially stronger.
-
-**Don’t add** dozens of technology icons, skill-progress bars, visitor counters, snake animations, random trophies, or huge GitHub-stat cards. They make student profiles look busy rather than technically strong.
-
-Instead, your pinned repositories should eventually tell this story:
-
-1. **`llm-from-scratch`** — tokenizer → transformer → inference  
-2. **`vector-engine`** — build ANN/vector search yourself  
-3. **`mini-spanner`** — distributed database  
-4. **`ai-workspace`** — your developer storage/memory agent  
-5. **`paper-reproductions`** — implementations of recent AI papers  
-6. **one excellent production AI product**
-
-That combination creates a much stronger impression than having twenty ordinary ML projects such as Titanic, house-price prediction, or a basic movie recommender.
-
-Your profile should make someone think:
-
-> “This person doesn't just call AI APIs. He wants to understand how the system underneath them works.”
-
-That is the identity I would build your GitHub around.
+[Portfolio](https://www.safalgupta.tech) · [LinkedIn](https://www.linkedin.com/in/safal-gupta/) · [X](https://x.com/Safallovetocode)
