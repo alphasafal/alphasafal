@@ -6,6 +6,10 @@ Computer Science at **VIT Vellore** · Based in India · Interested in AI infras
 
 ![Animated terminal showing Safal's engineering workflow: build, evaluate, inspect, ship](assets/terminal.gif)
 
+### Open-source contribution
+
+- **[OpenStatus — merged PR #2908](https://github.com/openstatusHQ/openstatus/pull/2908):** Fixed the Email subscription option on self-hosted status pages when a workspace enables it. Added regression tests and refined the server and component boundaries through maintainer review.
+
 ### Open the source
 
 | Project | What it explores |
