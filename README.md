@@ -8,6 +8,7 @@ Computer Science at **VIT Vellore** · Based in India · Interested in AI infras
 
 ### Open-source contribution
 
+- **[CodexBar — merged PR #4528](https://github.com/steipete/CodexBar/pull/4528):** Fixed cross-browser cookie permission diagnostics so Chrome and Safari recovery guidance is preserved, with regression tests for error ordering and precedence. Merged by the maintainer; credited as a co-author on a follow-up commit.
 - **[OpenStatus — merged PR #2908](https://github.com/openstatusHQ/openstatus/pull/2908):** Fixed the Email subscription option on self-hosted status pages when a workspace enables it. Added regression tests and refined the server and component boundaries through maintainer review.
 
 ### Open the source
