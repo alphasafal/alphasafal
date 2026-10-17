@@ -10,6 +10,8 @@ Computer Science at **VIT Vellore** · Based in India · Interested in AI infras
 
 - **[CodexBar — merged PR #4528](https://github.com/steipete/CodexBar/pull/4528):** Fixed cross-browser cookie permission diagnostics so Chrome and Safari recovery guidance is preserved, with regression tests for error ordering and precedence. Merged by the maintainer; credited as a co-author on a follow-up commit.
 - **[OpenStatus — merged PR #2908](https://github.com/openstatusHQ/openstatus/pull/2908):** Fixed the Email subscription option on self-hosted status pages when a workspace enables it. Added regression tests and refined the server and component boundaries through maintainer review.
+- **[Stanford Stanza — merged PR #1697](https://github.com/stanfordnlp/stanza/pull/1697):** Corrected the README's documented minimum Python version (3.6 → 3.9) to match the package's `python_requires`, closing issue #1695.
+- **[MIT CML blockly-plugins — merged PR #91](https://github.com/mit-cml/blockly-plugins/pull/91):** Fixed the lexical-variables package's issue-tracker URL, which pointed at a misspelled GitHub organization, so bug reports reach the right repository.
 
 ### Open the source
 
