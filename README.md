@@ -6,6 +6,12 @@ Computer Science at **VIT Vellore** · Based in India · Interested in AI infras
 
 ![Animated terminal showing Safal's engineering workflow: build, evaluate, inspect, ship](assets/terminal.gif)
 
+### Shipped
+
+**[CONTRI — Open Source Compass](https://github.com/alphasafal/contri)** · [Chrome Web Store](https://chromewebstore.google.com/detail/njglkdpnkbieohopledjohcpkafogbid) · [Website](https://contri-two.vercel.app)
+
+A Chrome extension that tells contributors, right on GitHub, whether an issue is really free to take (assignees, claims in the comments, linked pull requests), how quickly the maintainers reply, and whether the project is still active. Every number says what it covers, and missing data shows as unknown, never zero. No backend or tracking; optional read-only GitHub sign-in with the token encrypted at rest; 100+ unit tests plus Playwright end-to-end, accessibility and contrast checks in CI. Preact, TypeScript, Manifest V3, MIT licensed.
+
 ### Open-source contribution
 
 - **[CodexBar — merged PR #4528](https://github.com/steipete/CodexBar/pull/4528):** Fixed cross-browser cookie permission diagnostics so Chrome and Safari recovery guidance is preserved, with regression tests for error ordering and precedence. Merged by the maintainer; credited as a co-author on a follow-up commit.
