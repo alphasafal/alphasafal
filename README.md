@@ -37,4 +37,4 @@ I learn by building the underlying pieces, testing them, and making the tradeoff
 
 ### Connect
 
-[Portfolio](https://www.safalgupta.tech) · [LinkedIn](https://www.linkedin.com/in/safal-gupta/) · [X](https://x.com/Safallovetocode)
+[Portfolio](https://www.safalgupta.tech) · [LinkedIn](https://www.linkedin.com/in/safal-gupta/) · [X](https://x.com/Safallovetocode) · [HackerRank](https://www.hackerrank.com/profile/safallovetocode)
