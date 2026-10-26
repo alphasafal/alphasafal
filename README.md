@@ -16,6 +16,7 @@ A Chrome extension that tells contributors, right on GitHub, whether an issue is
 
 **Merged**
 
+- **[Microsoft Semantic Kernel #14661](https://github.com/microsoft/semantic-kernel/pull/14661):** `ChatHistorySummarizationReducer` with `use_single_summary=False` folded earlier summaries into each new one whenever the history began with a system prompt, the common case. Fixed where it finds the summary boundary and added a regression test. Approved by a maintainer and merged with all 34 checks passing.
 - **[CodexBar #4528](https://github.com/steipete/CodexBar/pull/4528):** fixed cross-browser cookie permission diagnostics; added regression tests for error ordering.
 - **[OpenStatus #2908](https://github.com/openstatusHQ/openstatus/pull/2908):** fixed email subscriptions on self-hosted status pages; added regression tests. Merged after review.
 - Small fixes: corrected docs in [Stanford Stanza #1697](https://github.com/stanfordnlp/stanza/pull/1697) and [MIT CML blockly-plugins #91](https://github.com/mit-cml/blockly-plugins/pull/91).
