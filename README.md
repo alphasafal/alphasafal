@@ -14,9 +14,19 @@ A Chrome extension that tells contributors, right on GitHub, whether an issue is
 
 ### Open-source contribution
 
-- **[CodexBar #4528](https://github.com/steipete/CodexBar/pull/4528):** fixed cross-browser cookie permission diagnostics; added regression tests for error ordering. Merged.
+**Merged**
+
+- **[CodexBar #4528](https://github.com/steipete/CodexBar/pull/4528):** fixed cross-browser cookie permission diagnostics; added regression tests for error ordering.
 - **[OpenStatus #2908](https://github.com/openstatusHQ/openstatus/pull/2908):** fixed email subscriptions on self-hosted status pages; added regression tests. Merged after review.
 - Small fixes: corrected docs in [Stanford Stanza #1697](https://github.com/stanfordnlp/stanza/pull/1697) and [MIT CML blockly-plugins #91](https://github.com/mit-cml/blockly-plugins/pull/91).
+
+**In review** (each one reported as an issue first, with a test that fails before the fix)
+
+- **[NVIDIA NeMo Agent Toolkit #2467](https://github.com/NVIDIA/NeMo-Agent-Toolkit/pull/2467):** the ReAct output parser cut a tool's input at any later word "observation", so tools received truncated JSON with no error and no retry. Fixed the parser and added regression tests, including multiline inputs. Approved and queued to merge.
+- **[AWS Powertools for Lambda (Python) #8669](https://github.com/aws-powertools/powertools-lambda-python/pull/8669):** `EventBridgeV2Envelope` raised `UnicodeDecodeError` on binary `application/octet-stream` payloads. Now tries JSON first and falls back to raw bytes. Bug confirmed by the maintainers; milestone 3.38.0.
+- **[AWS Powertools for Lambda (Python) #8670](https://github.com/aws-powertools/powertools-lambda-python/pull/8670):** the Kafka Protobuf deserializer read Confluent message indexes as plain varints instead of zigzag, silently dropping fields. Fixed the decoding and added parametrised tests across index shapes; milestone 3.40.0.
+- **[NVIDIA Warp #2159](https://github.com/NVIDIA/warp/pull/2159):** `array.transpose()` accepted repeated axes and returned a view that read past the end of the array. It now rejects them, matching NumPy.
+- **[NVIDIA NeMo Curator #2534](https://github.com/NVIDIA-NeMo/Curator/pull/2534):** the arXiv LaTeX cleaner deleted the character before every inline `%` comment and missed a trailing `%`. Fixed the pattern and added a regression test.
 
 ### Open the source
 
