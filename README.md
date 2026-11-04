@@ -14,17 +14,23 @@ A Chrome extension that tells contributors, right on GitHub, whether an issue is
 
 ### Open-source contribution
 
-**Merged**
+**Merged** (11 pull requests across Apple, Google, Microsoft, NVIDIA, AWS, Hugging Face, Sentry and others)
 
+- **[Apple coreai-optimization #143](https://github.com/apple/coreai-optimization/pull/143):** quantizer config docstrings used `\*` escapes in normal strings, which raises `SyntaxWarning` on Python 3.12+ and stops the package compiling under `python -W error`. Made them raw strings, enabled ruff W605, and added a test that compiles every module with warnings treated as errors.
+- **[Google ADK #7726](https://github.com/google/adk-python/pull/7726):** the `SKILL.md` frontmatter parser split on the first `---` anywhere in the file, which broke descriptions containing `---` and dropped keys after block scalars. It now matches delimiters as whole lines. A maintainer reproduced the failures, approved it, and it landed on `main` through Google's Copybara import.
 - **[Microsoft Semantic Kernel #14661](https://github.com/microsoft/semantic-kernel/pull/14661):** `ChatHistorySummarizationReducer` with `use_single_summary=False` folded earlier summaries into each new one whenever the history began with a system prompt, the common case. Fixed where it finds the summary boundary and added a regression test. Approved by a maintainer and merged with all 34 checks passing.
+- **[NVIDIA NeMo Agent Toolkit #2467](https://github.com/NVIDIA/NeMo-Agent-Toolkit/pull/2467):** the ReAct output parser cut a tool's input at any later word "observation", so tools received truncated JSON with no error and no retry. Fixed the parser and added regression tests, including multiline inputs.
+- **[AWS Powertools for Lambda (Python) #8669](https://github.com/aws-powertools/powertools-lambda-python/pull/8669):** `EventBridgeV2Envelope` raised `UnicodeDecodeError` on binary `application/octet-stream` payloads. Now tries JSON first and falls back to raw bytes. Bug confirmed by the maintainers; milestone 3.38.0.
+- **[Hugging Face Hub #5257](https://github.com/huggingface/huggingface_hub/pull/5257):** `hf cache verify --local-dir` reported the download metadata under `.cache/huggingface/` as extra files, so `--fail-on-extra-files` failed even when every checksum matched. It now skips that metadata; added a regression test.
+- **[Sentry Python SDK #8119](https://github.com/getsentry/sentry-python/pull/8119):** serializing tracing baggage with no third-party items left a trailing comma, an empty list member under the W3C Baggage spec that strict downstream parsers can reject. Reachable through the Celery integration. A maintainer reproduced it with a Celery probe before merge.
 - **[CodexBar #4528](https://github.com/steipete/CodexBar/pull/4528):** fixed cross-browser cookie permission diagnostics; added regression tests for error ordering.
 - **[OpenStatus #2908](https://github.com/openstatusHQ/openstatus/pull/2908):** fixed email subscriptions on self-hosted status pages; added regression tests. Merged after review.
 - Small fixes: corrected docs in [Stanford Stanza #1697](https://github.com/stanfordnlp/stanza/pull/1697) and [MIT CML blockly-plugins #91](https://github.com/mit-cml/blockly-plugins/pull/91).
 
-**In review** (each one reported as an issue first, with a test that fails before the fix)
+**In review** (each with a test or reproduction that fails before the fix)
 
-- **[NVIDIA NeMo Agent Toolkit #2467](https://github.com/NVIDIA/NeMo-Agent-Toolkit/pull/2467):** the ReAct output parser cut a tool's input at any later word "observation", so tools received truncated JSON with no error and no retry. Fixed the parser and added regression tests, including multiline inputs. Approved and queued to merge.
-- **[AWS Powertools for Lambda (Python) #8669](https://github.com/aws-powertools/powertools-lambda-python/pull/8669):** `EventBridgeV2Envelope` raised `UnicodeDecodeError` on binary `application/octet-stream` payloads. Now tries JSON first and falls back to raw bytes. Bug confirmed by the maintainers; milestone 3.38.0.
+- **[Anthropic Python SDK #2021](https://github.com/anthropics/anthropic-sdk-python/pull/2021):** the credential tests' environment isolation missed `ANTHROPIC_BASE_URL`, so with it set in the shell, 49 tests failed and 48 errored as token exchanges went to the wrong host. Approved by a reviewer who reproduced the before and after counts.
+- **[Swift Foundation #2364](https://github.com/swiftlang/swift-foundation/pull/2364):** the Gregorian calendar reported March 31, June 30 and September 30 as belonging to the next quarter. Now computes the quarter from the month. Approved by a maintainer.
 - **[AWS Powertools for Lambda (Python) #8670](https://github.com/aws-powertools/powertools-lambda-python/pull/8670):** the Kafka Protobuf deserializer read Confluent message indexes as plain varints instead of zigzag, silently dropping fields. Fixed the decoding and added parametrised tests across index shapes; milestone 3.40.0.
 - **[NVIDIA Warp #2159](https://github.com/NVIDIA/warp/pull/2159):** `array.transpose()` accepted repeated axes and returned a view that read past the end of the array. It now rejects them, matching NumPy.
 - **[NVIDIA NeMo Curator #2534](https://github.com/NVIDIA-NeMo/Curator/pull/2534):** the arXiv LaTeX cleaner deleted the character before every inline `%` comment and missed a trailing `%`. Fixed the pattern and added a regression test.
