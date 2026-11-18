@@ -1,56 +1,75 @@
 # Safal Gupta
 
-**AI systems engineer in the making.** I build tools that expose how a system works: its state, failure modes, and evidence that it behaves as intended.
+**Software engineering · AI systems · open source**
 
-Computer Science at **VIT Vellore** · Based in India · Interested in AI infrastructure, evaluation, distributed systems, and robotics.
+Final-year Computer Science student at **VIT Vellore**, India. I build and investigate systems with a focus on correctness, failure modes, observability, security, and evidence-backed engineering.
+
+Interested in **AI infrastructure and evaluation, backend/distributed systems, developer tooling, and systems security**.
 
 ![Animated terminal showing Safal's engineering workflow: build, evaluate, inspect, ship](assets/terminal.gif)
 
-### Shipped
+### Building
 
 **[CONTRI — Open Source Compass](https://github.com/alphasafal/contri)** · [Chrome Web Store](https://chromewebstore.google.com/detail/njglkdpnkbieohopledjohcpkafogbid) · [Website](https://contri-two.vercel.app)
 
-A Chrome extension that tells contributors, right on GitHub, whether an issue is really free to take (assignees, claims in the comments, linked pull requests), how quickly the maintainers reply, and whether the project is still active. Every number says what it covers, and missing data shows as unknown, never zero. No backend or tracking; optional read-only GitHub sign-in with the token encrypted at rest; 100+ unit tests plus Playwright end-to-end, accessibility and contrast checks in CI. Preact, TypeScript, Manifest V3, MIT licensed.
+A Chrome extension for evaluating GitHub issues and repository health: issue ownership and claims, linked pull requests, maintainer responsiveness, and recent activity. Reports evidence and uncertainty instead of treating missing data as zero. Built with Preact, TypeScript, and Manifest V3; includes automated tests. The project also includes **contri-mcp** for AI coding assistants and plugin packaging for agent workflows. [Source and documentation →](https://github.com/alphasafal/contri)
 
-### Open-source contribution
+**[Production Agent Skills](https://github.com/alphasafal/production-agent-skills)** — 15 portable, role-organized skills for software engineering workflows, including test-first development, code review, incident response, security auditing, and system design. Includes automated validation, behavioral evaluations, and role packs.
 
-**Merged** (11 pull requests across Apple, Google, Microsoft, NVIDIA, AWS, Hugging Face, Sentry and others)
+**[AI Eval Engineering](https://github.com/alphasafal/ai-eval-engineering)** — TypeScript evaluation harness exploring deterministic test cases, graders, trajectories, latency and cost measurements, and release checks. Mock-based demonstrations are labelled as such, not presented as production-model results.
 
-- **[Apple coreai-optimization #143](https://github.com/apple/coreai-optimization/pull/143):** quantizer config docstrings used `\*` escapes in normal strings, which raises `SyntaxWarning` on Python 3.12+ and stops the package compiling under `python -W error`. Made them raw strings, enabled ruff W605, and added a test that compiles every module with warnings treated as errors.
-- **[Google ADK #7726](https://github.com/google/adk-python/pull/7726):** the `SKILL.md` frontmatter parser split on the first `---` anywhere in the file, which broke descriptions containing `---` and dropped keys after block scalars. It now matches delimiters as whole lines. A maintainer reproduced the failures, approved it, and it landed on `main` through Google's Copybara import.
-- **[Microsoft Semantic Kernel #14661](https://github.com/microsoft/semantic-kernel/pull/14661):** `ChatHistorySummarizationReducer` with `use_single_summary=False` folded earlier summaries into each new one whenever the history began with a system prompt, the common case. Fixed where it finds the summary boundary and added a regression test. Approved by a maintainer and merged with all 34 checks passing.
-- **[NVIDIA NeMo Agent Toolkit #2467](https://github.com/NVIDIA/NeMo-Agent-Toolkit/pull/2467):** the ReAct output parser cut a tool's input at any later word "observation", so tools received truncated JSON with no error and no retry. Fixed the parser and added regression tests, including multiline inputs.
-- **[AWS Powertools for Lambda (Python) #8669](https://github.com/aws-powertools/powertools-lambda-python/pull/8669):** `EventBridgeV2Envelope` raised `UnicodeDecodeError` on binary `application/octet-stream` payloads. Now tries JSON first and falls back to raw bytes. Bug confirmed by the maintainers; milestone 3.38.0.
-- **[Hugging Face Hub #5257](https://github.com/huggingface/huggingface_hub/pull/5257):** `hf cache verify --local-dir` reported the download metadata under `.cache/huggingface/` as extra files, so `--fail-on-extra-files` failed even when every checksum matched. It now skips that metadata; added a regression test.
-- **[Sentry Python SDK #8119](https://github.com/getsentry/sentry-python/pull/8119):** serializing tracing baggage with no third-party items left a trailing comma, an empty list member under the W3C Baggage spec that strict downstream parsers can reject. Reachable through the Celery integration. A maintainer reproduced it with a Celery probe before merge.
-- **[CodexBar #4528](https://github.com/steipete/CodexBar/pull/4528):** fixed cross-browser cookie permission diagnostics; added regression tests for error ordering.
-- **[OpenStatus #2908](https://github.com/openstatusHQ/openstatus/pull/2908):** fixed email subscriptions on self-hosted status pages; added regression tests. Merged after review.
-- Small fixes: corrected docs in [Stanford Stanza #1697](https://github.com/stanfordnlp/stanza/pull/1697) and [MIT CML blockly-plugins #91](https://github.com/mit-cml/blockly-plugins/pull/91).
+**[Exchange Core](https://github.com/alphasafal/exchange-core)** — C++20 limit-order-book and trading-infrastructure exploration, including pre-trade risk checks, a write-ahead journal, and deterministic replay.
 
-**In review** (each with a test or reproduction that fails before the fix)
+**[SAAYA VERIFY](https://github.com/alphasafal/saaya-verify)** — Evidence-led cooling-shelter research and prototype concept.
 
-- **[Anthropic Python SDK #2021](https://github.com/anthropics/anthropic-sdk-python/pull/2021):** the credential tests' environment isolation missed `ANTHROPIC_BASE_URL`, so with it set in the shell, 49 tests failed and 48 errored as token exchanges went to the wrong host. Approved by a reviewer who reproduced the before and after counts.
-- **[Swift Foundation #2364](https://github.com/swiftlang/swift-foundation/pull/2364):** the Gregorian calendar reported March 31, June 30 and September 30 as belonging to the next quarter. Now computes the quarter from the month. Approved by a maintainer.
-- **[AWS Powertools for Lambda (Python) #8670](https://github.com/aws-powertools/powertools-lambda-python/pull/8670):** the Kafka Protobuf deserializer read Confluent message indexes as plain varints instead of zigzag, silently dropping fields. Fixed the decoding and added parametrised tests across index shapes; milestone 3.40.0.
-- **[NVIDIA Warp #2159](https://github.com/NVIDIA/warp/pull/2159):** `array.transpose()` accepted repeated axes and returned a view that read past the end of the array. It now rejects them, matching NumPy.
-- **[NVIDIA NeMo Curator #2534](https://github.com/NVIDIA-NeMo/Curator/pull/2534):** the arXiv LaTeX cleaner deleted the character before every inline `%` comment and missed a trailing `%`. Fixed the pattern and added a regression test.
+### Open-source contributions
 
-### Open the source
+Selected **merged** contributions (links go directly to the accepted pull requests):
 
-| Project | What it explores |
+| Project | Contribution |
 | --- | --- |
-| [AI Eval Engineering](https://github.com/alphasafal/ai-eval-engineering) | A TypeScript evaluation harness for prompts and agents, with graders, trajectory metrics, cost and latency tracking, and release gates. |
-| [Production Agent Skills](https://github.com/alphasafal/production-agent-skills) | Eight portable engineering, data, and product skills with validation and evaluation cases. |
-| [Exchange Core](https://github.com/alphasafal/exchange-core) | A C++20 limit order book with pre-trade risk, a write-ahead journal, deterministic replay, and network gateways. |
-| [SAAYA VERIFY](https://github.com/alphasafal/saaya-verify) | An evidence-led cooling shelter research concept and tabletop fabrication candidate. |
+| [Apple Core AI Optimization #143](https://github.com/apple/coreai-optimization/pull/143) | Fixed Python invalid-escape warnings in quantization docstrings and added safeguards. |
+| [Microsoft Semantic Kernel #14661](https://github.com/microsoft/semantic-kernel/pull/14661) | Corrected chat-history summarization behavior when retaining multiple summaries. |
+| [NVIDIA NeMo Agent Toolkit #2467](https://github.com/NVIDIA/NeMo-Agent-Toolkit/pull/2467) | Prevented the ReAct parser from prematurely truncating tool input containing “observation”. |
+| [AWS Powertools #8669](https://github.com/aws-powertools/powertools-lambda-python/pull/8669) | Corrected binary payload handling in the EventBridge envelope. |
+| [AWS Powertools #8670](https://github.com/aws-powertools/powertools-lambda-python/pull/8670) | Fixed Confluent Protobuf message-index decoding using zigzag varints. |
+| [Hugging Face Hub #5257](https://github.com/huggingface/huggingface_hub/pull/5257) | Excluded download-cache metadata from local checksum verification. |
+| [Sentry Python #8119](https://github.com/getsentry/sentry-python/pull/8119) | Removed an invalid trailing comma from serialized tracing baggage. |
+| [ProjectDiscovery Nuclei Templates #17746](https://github.com/projectdiscovery/nuclei-templates/pull/17746) | Fixed mismatched matcher variables in three CVE detection templates. |
+| [Stanford Stanza #1697](https://github.com/stanfordnlp/stanza/pull/1697) | Corrected documented minimum supported Python version. |
+| [OpenStatus #2908](https://github.com/openstatusHQ/openstatus/pull/2908) | Corrected visibility of email subscriptions for eligible self-hosted status pages. |
+| [CodexBar #4528](https://github.com/steipete/CodexBar/pull/4528) | Improved cross-browser cookie permission error guidance. |
+| [MIT CML Blockly Plugins #91](https://github.com/mit-cml/blockly-plugins/pull/91) | Corrected a package issue-tracker link. |
 
-### Current focus
+Additional merged infrastructure fixes:
+- **[zyvor-cloud-netconfig #5](https://github.com/zyvorai/zyvor-cloud-netconfig/pull/5), [#6](https://github.com/zyvorai/zyvor-cloud-netconfig/pull/6), [#7](https://github.com/zyvorai/zyvor-cloud-netconfig/pull/7):** cloud metadata parsing and daemon resilience across Azure, GCP, and unsupported environments.
+- **[zyvor-guestkit #66](https://github.com/zyvorai/zyvor-guestkit/pull/66), [#67](https://github.com/zyvorai/zyvor-guestkit/pull/67):** disk-format identification and Alpine package parsing.
+- **[zyvor-netevd #134](https://github.com/zyvorai/zyvor-netevd/pull/134), [#135](https://github.com/zyvorai/zyvor-netevd/pull/135):** routing documentation and failure handling for supervised watchers.
+- **[awesome-mcp-servers #19293](https://github.com/punkpeye/awesome-mcp-servers/pull/19293):** added CONTRI to the directory.
 
-- **AI systems:** evaluation, retrieval, agents, and efficient inference.
-- **Systems engineering:** deterministic behavior, observability, storage, and distributed systems.
-- **Robotics:** connecting software decisions to the physical world.
+### In review
 
-I learn by building the underlying pieces, testing them, and making the tradeoffs visible. My recent work spans Python, C++, TypeScript, and full-stack tools.
+These are **open**, not merged. Reviews and CI states can change:
+
+- **[Stripe Python #1978](https://github.com/stripe/stripe-python/pull/1978)** — encoding boolean and datetime values inside lists consistently with top-level values. **Maintainer-approved; awaiting merge.**
+- **[Swift Foundation #2364](https://github.com/swiftlang/swift-foundation/pull/2364)** — correct Gregorian quarter calculations at quarter-end boundaries. **Approved; CI/merge pending.**
+- **[Anthropic Python SDK #2021](https://github.com/anthropics/anthropic-sdk-python/pull/2021)** and **[#2030](https://github.com/anthropics/anthropic-sdk-python/pull/2030)** — isolate credential and AWS/Mantle client tests from ambient environment variables.
+- **[Razorpay Node #492](https://github.com/razorpay/razorpay-node/pull/492)** — preserve network failures without exposing credentials through raw Axios errors.
+- **[NVIDIA Warp #2159](https://github.com/NVIDIA/warp/pull/2159)** — reject repeated axes in transpose operations.
+- **[NVIDIA NeMo Curator #2534](https://github.com/NVIDIA-NeMo/Curator/pull/2534)** — preserve characters preceding inline LaTeX comments.
+- **[npm CLI #10290](https://github.com/npm/cli/pull/10290)** and **[#10292](https://github.com/npm/cli/pull/10292)** — publish-tag validation and malformed dependency-field handling; **review findings are being addressed**.
+- **[Stripe Python #1987](https://github.com/stripe/stripe-python/pull/1987)** — multiple SDK core edge-case fixes; still in review.
+
+[See all my open pull requests →](https://github.com/pulls?q=is%3Apr+is%3Aopen+author%3Aalphasafal)
+
+### Current interests
+
+- **Reliable AI:** evaluation harnesses, agent behavior, retrieval, model integration, and reproducible experiments.
+- **Backend and systems:** APIs, concurrency, consistency, observability, and deterministic replay.
+- **Secure engineering:** safe failure handling, input validation, isolation, and regression tests.
+- **Open-source engineering:** small reproducible bugs, focused fixes, clear tests, and constructive maintainer reviews.
+
+My recent work uses **Python, TypeScript/JavaScript, C++, and full-stack tooling**. I care more about tests and measured behavior than unverified performance claims.
 
 ### Connect
 
