@@ -10,7 +10,7 @@
 <rect x=".5" y=".5" width="1199" height="765" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".08"/>
 <text x="24" y="54" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="30" font-weight="800" fill="url(#g)" letter-spacing="-1">Merged upstream</text>
 <text x="24" y="82" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12.5" fill="#64748b">live from the GitHub API · refreshed daily · sorted by stars</text>
-<text x="1176" y="56" text-anchor="end" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="34" font-weight="800" fill="#f1f5f9">95.1k★</text>
+<text x="1176" y="56" text-anchor="end" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="34" font-weight="800" fill="#f1f5f9">95.2k★</text>
 <text x="1176" y="80" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#64748b">19 PRs · 14 repos</text>
 <g opacity="0" transform="translate(24 134)">
 <animateTransform attributeName="transform" type="translate" from="24 134" to="24 118" begin="0.00s" dur=".7s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".2 .8 .2 1"/>
