@@ -21,7 +21,10 @@ switch, a write-ahead journal with deterministic replay, and a binary protocol.
   on the same workload: submits are a draw, and cancel p99 is **286 ns vs
   95 µs**, because Liquibook scans the price level.
 - Correctness is checked against a reference model, three fuzzers, ASan, UBSan
-  and TSan, and a replay digest. 383 tests, 12 CI jobs.
+  and TSan, and a replay digest. 398 tests, 12 CI jobs.
+- Clients can resend an order after a crash without it executing twice. A
+  death test kills the venue between the journal write and the ack to prove it
+  ([ADR 0004](https://github.com/alphasafal/exchange-core/blob/main/docs/adr/0004-increasing-order-ids.md)).
 - [Try it in the browser](https://alphasafal.github.io/exchange-core/) (WebAssembly) ·
   [design decisions](https://github.com/alphasafal/exchange-core#design-decisions) ·
   [the benchmark bug I found in my own numbers](https://github.com/alphasafal/exchange-core/blob/main/docs/comparison.md#a-correction-to-the-original-benchmark)
