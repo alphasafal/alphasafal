@@ -7,22 +7,53 @@
   <a href="https://hackerrank.com/profile/safallovetocode">HackerRank</a>
 </p>
 
-<p align="center"><b>Final-year B.Tech CSE at VIT Vellore.</b> I fix bugs in the open-source tools I use, from AWS Powertools and Hugging Face Hub to Semantic Kernel and NVIDIA NeMo, and build developer tools of my own.</p>
+Final-year B.Tech CSE at VIT Vellore. I like systems where correctness and the
+tail latency matter, and I measure before I claim.
 
-### 🧭 Building
+### Main project: [exchange-core](https://github.com/alphasafal/exchange-core)
+
+A C++20 exchange core: a price-time order book, pre-trade risk with a kill
+switch, a write-ahead journal with deterministic replay, and a binary protocol.
+
+- **75 ns** per command in process, **zero allocations** on the matching path
+  (enforced by a test), and cost flat from 10 to 5,000 price levels.
+- Against [Liquibook](https://github.com/alphasafal/exchange-core/blob/main/docs/comparison.md)
+  on the same workload: submits are a draw, and cancel p99 is **286 ns vs
+  95 µs**, because Liquibook scans the price level.
+- Correctness is checked against a reference model, three fuzzers, ASan, UBSan
+  and TSan, and a replay digest. 383 tests, 12 CI jobs.
+- [Try it in the browser](https://alphasafal.github.io/exchange-core/) (WebAssembly) ·
+  [design decisions](https://github.com/alphasafal/exchange-core#design-decisions) ·
+  [the benchmark bug I found in my own numbers](https://github.com/alphasafal/exchange-core/blob/main/docs/comparison.md#a-correction-to-the-original-benchmark)
+
+### Also building
 
 | | |
 |---|---|
-| **[CONTRI](https://github.com/alphasafal/contri)** | Chrome extension + MCP server: is this repo alive, do maintainers reply, is the issue already claimed? Reports evidence and uncertainty, never fake zeros. |
-| **[Production Agent Skills](https://github.com/alphasafal/production-agent-skills)** | 15 benchmarked skills for AI coding agents, organized by role, with behavioral evals. |
-| **[AI Eval Engineering](https://github.com/alphasafal/ai-eval-engineering)** | TypeScript harness: deterministic graders, trajectory metrics, cost/latency tracking, release gates. |
-| **[Exchange Core](https://github.com/alphasafal/exchange-core)** | C++20 limit order book with pre-trade risk checks, write-ahead journal and deterministic replay. |
-| **[VAJRA](https://github.com/alphasafal/vajra)** | Static malware triage engine: dissects a suspicious file without running it and explains every verdict. |
-| **[Lastseat](https://github.com/alphasafal/lastseat)** | Race-proof team formation for 10,000-person hackathons: fifty people click "join" on the last seat, exactly one gets it. |
-| **[GitRishta](https://github.com/alphasafal/gitrishta)** | Your GitHub profile as an Indian shaadi biodata. Gotra: JavaScript. |
+| **[CONTRI](https://github.com/alphasafal/contri)** | Chrome extension and MCP server. It answers three questions about a GitHub repo: is it alive, do maintainers reply, and is this issue already claimed? |
+| **[VAJRA](https://github.com/alphasafal/vajra)** | Static malware triage. It analyses a suspicious file without running it and explains each verdict. |
+| **[AI Eval Engineering](https://github.com/alphasafal/ai-eval-engineering)** | A TypeScript harness for testing prompts and agents: deterministic graders, trajectory metrics, cost and latency, release gates. |
+| **[Production Agent Skills](https://github.com/alphasafal/production-agent-skills)** | 15 skills for AI coding agents, with behavioural evals. |
+
+### Upstream
+
+Merged fixes in projects I use. The list below refreshes daily from the GitHub API.
 
 <img src="assets/merged.svg" alt="Merged upstream pull requests, refreshed daily from the GitHub API" width="100%"/>
 
-<img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D contribution graph" width="100%"/>
+<sub>[Open PRs →](https://github.com/pulls?q=is%3Apr+author%3Aalphasafal+is%3Aopen)</sub>
 
-<sub>Everything above regenerates daily from the GitHub API, so no number here is typed by hand. [Open PRs →](https://github.com/pulls?q=is%3Apr+author%3Aalphasafal+is%3Aopen)</sub>
+<details>
+<summary><b>Hackathon, hiring-challenge and side builds</b> (built in days; the challenge entries are archived)</summary>
+
+| | |
+|---|---|
+| [Lastseat](https://github.com/alphasafal/lastseat) | Team formation where 50 people race for the last seat and exactly one gets it. Hack4Hack 2026. |
+| [Virtual KAM](https://github.com/alphasafal/snapdeal-virtual-kam) | Voice account manager for Snapdeal sellers, in English, Hindi and Hinglish. Snapdeal take-home. |
+| [Udyam Setu](https://github.com/alphasafal/udyam-setu) | MSME digital onboarding prototype. Airtel SYNC case challenge. |
+| [TwinPilot](https://github.com/alphasafal/twinpilot) | AI agents optimising an EnergyPlus building model behind a safety shield. Eco-Loop hackathon. |
+| [MemoryMate](https://github.com/alphasafal/memorymate) | Offline voice task assistant built on whisper.cpp and llama.cpp. Hackathon, 2025. |
+| [Python for Planet 365](https://github.com/alphasafal/python-for-planet-365) | A 365-day Python and sustainability curriculum. Day 1 done; paused. |
+| [GitRishta](https://github.com/alphasafal/gitrishta) | Your GitHub profile as an Indian shaadi biodata. A weekend joke. |
+
+</details>
