@@ -26,9 +26,9 @@
 <g clip-path="url(#name)"><rect y="60" width="300" height="110" fill="url(#shine)" opacity=".5"><animate attributeName="x" values="-300;700;700" keyTimes="0;.35;1" dur="6s" begin="1.5s" repeatCount="indefinite"/></rect></g>
 <text x="60" y="190" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="20" fill="#cbd5e1">I find bugs in software the world runs on, and get the fix merged.</text>
 <g transform="translate(60 214)"><rect width="130" height="34" rx="17" fill="#ffffff" fill-opacity=".04" stroke="#ffffff" stroke-opacity=".1"/>
-<text x="16" y="22.5" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="15"><tspan font-weight="800" fill="url(#g)">19</tspan><tspan fill="#94a3b8"> PRs merged</tspan></text></g><g transform="translate(200.0 214)"><rect width="160" height="34" rx="17" fill="#ffffff" fill-opacity=".04" stroke="#ffffff" stroke-opacity=".1"/>
-<text x="16" y="22.5" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="15"><tspan font-weight="800" fill="url(#g)">14</tspan><tspan fill="#94a3b8"> upstream repos</tspan></text></g><g transform="translate(369.6 214)"><rect width="159" height="34" rx="17" fill="#ffffff" fill-opacity=".04" stroke="#ffffff" stroke-opacity=".1"/>
-<text x="16" y="22.5" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="15"><tspan font-weight="800" fill="url(#g)">95.2k★</tspan><tspan fill="#94a3b8"> combined</tspan></text></g>
+<text x="16" y="22.5" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="15"><tspan font-weight="800" fill="url(#g)">20</tspan><tspan fill="#94a3b8"> PRs merged</tspan></text></g><g transform="translate(200.0 214)"><rect width="160" height="34" rx="17" fill="#ffffff" fill-opacity=".04" stroke="#ffffff" stroke-opacity=".1"/>
+<text x="16" y="22.5" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="15"><tspan font-weight="800" fill="url(#g)">15</tspan><tspan fill="#94a3b8"> upstream repos</tspan></text></g><g transform="translate(369.6 214)"><rect width="159" height="34" rx="17" fill="#ffffff" fill-opacity=".04" stroke="#ffffff" stroke-opacity=".1"/>
+<text x="16" y="22.5" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="15"><tspan font-weight="800" fill="url(#g)">97.3k★</tspan><tspan fill="#94a3b8"> combined</tspan></text></g>
 <rect x="60" y="270" width="600" height="138" rx="14" fill="#0b1020" fill-opacity=".85" stroke="#ffffff" stroke-opacity=".1"/>
 <circle cx="82" cy="290" r="5" fill="#ff5f56"/><circle cx="98" cy="290" r="5" fill="#ffbd2e"/><circle cx="114" cy="290" r="5" fill="#27c93f"/>
 <text x="636" y="294" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#475569">zsh · ~/alphasafal</text>
@@ -44,7 +44,7 @@
 <circle cx="945" cy="214" r="120" fill="url(#halo)"><animate attributeName="r" values="105;130;105" dur="5s" repeatCount="indefinite"/></circle>
 <circle cx="945" cy="214" r="54" fill="url(#sphere)"/>
 <ellipse cx="931" cy="192" rx="18" ry="9" fill="#fff" opacity=".25"/>
-<text x="945" y="222" text-anchor="middle" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="38" font-weight="800" fill="#fff">19</text>
+<text x="945" y="222" text-anchor="middle" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="38" font-weight="800" fill="#fff">20</text>
 <text x="945" y="240" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" letter-spacing="2" fill="#ddd6fe">MERGED</text>
 <g><animateMotion path="M763,214a182,86 0 1,1 364,0a182,86 0 1,1 -364,0" dur="26s" begin="0.00s" repeatCount="indefinite"/>
 <g><animateTransform attributeName="transform" type="scale" values=".9;.72;.9;1.12;.9" dur="26s" begin="0.00s" repeatCount="indefinite" keyTimes="0;.25;.5;.75;1"/>

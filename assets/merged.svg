@@ -10,8 +10,8 @@
 <rect x=".5" y=".5" width="1199" height="765" rx="22" fill="none" stroke="#ffffff" stroke-opacity=".08"/>
 <text x="24" y="54" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="30" font-weight="800" fill="url(#g)" letter-spacing="-1">Merged upstream</text>
 <text x="24" y="82" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12.5" fill="#64748b">live from the GitHub API · refreshed daily · sorted by stars</text>
-<text x="1176" y="56" text-anchor="end" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="34" font-weight="800" fill="#f1f5f9">95.2k★</text>
-<text x="1176" y="80" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#64748b">19 PRs · 14 repos</text>
+<text x="1176" y="56" text-anchor="end" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="34" font-weight="800" fill="#f1f5f9">97.3k★</text>
+<text x="1176" y="80" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#64748b">20 PRs · 15 repos</text>
 <g opacity="0" transform="translate(24 134)">
 <animateTransform attributeName="transform" type="translate" from="24 134" to="24 118" begin="0.00s" dur=".7s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".2 .8 .2 1"/>
 <animate attributeName="opacity" from="0" to="1" begin="0.00s" dur=".7s" fill="freeze"/>
@@ -135,39 +135,39 @@
 <rect width="368" height="112" rx="14" fill="#0b1020" stroke="#1e293b" stroke-width="1"/>
 <g clip-path="url(#cc)"><rect width="368" height="112" fill="url(#shine)"><animate attributeName="x" values="-368;368;368" keyTimes="0;.3;1" dur="8s" begin="3.12s" repeatCount="indefinite"/></rect></g>
 <circle cx="38" cy="40" r="18" fill="url(#g)" fill-opacity=".18" stroke="url(#g)"/>
-<text x="38" y="46" text-anchor="middle" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="16" font-weight="800" fill="#e6edf3">A</text>
-<text x="66" y="34" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#64748b">apple</text>
-<text x="66" y="54" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="18" font-weight="700" fill="#f1f5f9">coreai-optimization</text>
-<text x="348" y="34" text-anchor="end" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#fbbf24">★ 160</text>
+<text x="38" y="46" text-anchor="middle" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="16" font-weight="800" fill="#e6edf3">S</text>
+<text x="66" y="34" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#64748b">stripe</text>
+<text x="66" y="54" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="18" font-weight="700" fill="#f1f5f9">stripe-python</text>
+<text x="348" y="34" text-anchor="end" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#fbbf24">★ 2.1k</text>
 <rect x="22" y="72" width="324" height="4" rx="2" fill="#1e293b"/>
-<rect x="22" y="72" width="0" height="4" rx="2" fill="url(#g)"><animate attributeName="width" from="0" to="160" begin="1.03s" dur="1.2s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".2 .8 .2 1"/></rect>
-<text x="22" y="97" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12"><tspan fill="#4ade80">✓ 1 merged</tspan><tspan fill="#64748b">  #143</tspan></text>
+<rect x="22" y="72" width="0" height="4" rx="2" fill="url(#g)"><animate attributeName="width" from="0" to="241" begin="1.03s" dur="1.2s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".2 .8 .2 1"/></rect>
+<text x="22" y="97" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12"><tspan fill="#4ade80">✓ 1 merged</tspan><tspan fill="#64748b">  #1978</tspan></text>
 </g><g opacity="0" transform="translate(408 518)">
 <animateTransform attributeName="transform" type="translate" from="408 518" to="408 502" begin="0.70s" dur=".7s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".2 .8 .2 1"/>
 <animate attributeName="opacity" from="0" to="1" begin="0.70s" dur=".7s" fill="freeze"/>
 <rect width="368" height="112" rx="14" fill="#0b1020" stroke="#1e293b" stroke-width="1"/>
 <g clip-path="url(#cc)"><rect width="368" height="112" fill="url(#shine)"><animate attributeName="x" values="-368;368;368" keyTimes="0;.3;1" dur="8s" begin="3.30s" repeatCount="indefinite"/></rect></g>
 <circle cx="38" cy="40" r="18" fill="url(#g)" fill-opacity=".18" stroke="url(#g)"/>
-<text x="38" y="46" text-anchor="middle" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="16" font-weight="800" fill="#e6edf3">M</text>
-<text x="66" y="34" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#64748b">mit-cml</text>
-<text x="66" y="54" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="18" font-weight="700" fill="#f1f5f9">blockly-plugins</text>
-<text x="348" y="34" text-anchor="end" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#fbbf24">★ 27</text>
+<text x="38" y="46" text-anchor="middle" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="16" font-weight="800" fill="#e6edf3">A</text>
+<text x="66" y="34" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#64748b">apple</text>
+<text x="66" y="54" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="18" font-weight="700" fill="#f1f5f9">coreai-optimization</text>
+<text x="348" y="34" text-anchor="end" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#fbbf24">★ 160</text>
 <rect x="22" y="72" width="324" height="4" rx="2" fill="#1e293b"/>
-<rect x="22" y="72" width="0" height="4" rx="2" fill="url(#g)"><animate attributeName="width" from="0" to="105" begin="1.10s" dur="1.2s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".2 .8 .2 1"/></rect>
-<text x="22" y="97" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12"><tspan fill="#4ade80">✓ 1 merged</tspan><tspan fill="#64748b">  #91</tspan></text>
+<rect x="22" y="72" width="0" height="4" rx="2" fill="url(#g)"><animate attributeName="width" from="0" to="160" begin="1.10s" dur="1.2s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".2 .8 .2 1"/></rect>
+<text x="22" y="97" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12"><tspan fill="#4ade80">✓ 1 merged</tspan><tspan fill="#64748b">  #143</tspan></text>
 </g><g opacity="0" transform="translate(792 518)">
 <animateTransform attributeName="transform" type="translate" from="792 518" to="792 502" begin="0.77s" dur=".7s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".2 .8 .2 1"/>
 <animate attributeName="opacity" from="0" to="1" begin="0.77s" dur=".7s" fill="freeze"/>
 <rect width="368" height="112" rx="14" fill="#0b1020" stroke="#1e293b" stroke-width="1"/>
 <g clip-path="url(#cc)"><rect width="368" height="112" fill="url(#shine)"><animate attributeName="x" values="-368;368;368" keyTimes="0;.3;1" dur="8s" begin="3.48s" repeatCount="indefinite"/></rect></g>
 <circle cx="38" cy="40" r="18" fill="url(#g)" fill-opacity=".18" stroke="url(#g)"/>
-<text x="38" y="46" text-anchor="middle" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="16" font-weight="800" fill="#e6edf3">Z</text>
-<text x="66" y="34" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#64748b">zyvorai</text>
-<text x="66" y="54" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="18" font-weight="700" fill="#f1f5f9">zyvor-guestkit</text>
-<text x="348" y="34" text-anchor="end" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#fbbf24">★ 9</text>
+<text x="38" y="46" text-anchor="middle" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="16" font-weight="800" fill="#e6edf3">M</text>
+<text x="66" y="34" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#64748b">mit-cml</text>
+<text x="66" y="54" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="18" font-weight="700" fill="#f1f5f9">blockly-plugins</text>
+<text x="348" y="34" text-anchor="end" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#fbbf24">★ 27</text>
 <rect x="22" y="72" width="324" height="4" rx="2" fill="#1e293b"/>
-<rect x="22" y="72" width="0" height="4" rx="2" fill="url(#g)"><animate attributeName="width" from="0" to="73" begin="1.17s" dur="1.2s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".2 .8 .2 1"/></rect>
-<text x="22" y="97" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12"><tspan fill="#4ade80">✓ 2 merged</tspan><tspan fill="#64748b">  #66 #67</tspan></text>
+<rect x="22" y="72" width="0" height="4" rx="2" fill="url(#g)"><animate attributeName="width" from="0" to="105" begin="1.17s" dur="1.2s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".2 .8 .2 1"/></rect>
+<text x="22" y="97" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12"><tspan fill="#4ade80">✓ 1 merged</tspan><tspan fill="#64748b">  #91</tspan></text>
 </g><g opacity="0" transform="translate(24 646)">
 <animateTransform attributeName="transform" type="translate" from="24 646" to="24 630" begin="0.84s" dur=".7s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".2 .8 .2 1"/>
 <animate attributeName="opacity" from="0" to="1" begin="0.84s" dur=".7s" fill="freeze"/>
@@ -176,11 +176,11 @@
 <circle cx="38" cy="40" r="18" fill="url(#g)" fill-opacity=".18" stroke="url(#g)"/>
 <text x="38" y="46" text-anchor="middle" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="16" font-weight="800" fill="#e6edf3">Z</text>
 <text x="66" y="34" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#64748b">zyvorai</text>
-<text x="66" y="54" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="18" font-weight="700" fill="#f1f5f9">zyvor-netevd</text>
-<text x="348" y="34" text-anchor="end" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#fbbf24">★ 7</text>
+<text x="66" y="54" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="18" font-weight="700" fill="#f1f5f9">zyvor-guestkit</text>
+<text x="348" y="34" text-anchor="end" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#fbbf24">★ 9</text>
 <rect x="22" y="72" width="324" height="4" rx="2" fill="#1e293b"/>
-<rect x="22" y="72" width="0" height="4" rx="2" fill="url(#g)"><animate attributeName="width" from="0" to="66" begin="1.24s" dur="1.2s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".2 .8 .2 1"/></rect>
-<text x="22" y="97" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12"><tspan fill="#4ade80">✓ 2 merged</tspan><tspan fill="#64748b">  #134 #135</tspan></text>
+<rect x="22" y="72" width="0" height="4" rx="2" fill="url(#g)"><animate attributeName="width" from="0" to="73" begin="1.24s" dur="1.2s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".2 .8 .2 1"/></rect>
+<text x="22" y="97" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12"><tspan fill="#4ade80">✓ 2 merged</tspan><tspan fill="#64748b">  #66 #67</tspan></text>
 </g><g opacity="0" transform="translate(408 646)">
 <animateTransform attributeName="transform" type="translate" from="408 646" to="408 630" begin="0.91s" dur=".7s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".2 .8 .2 1"/>
 <animate attributeName="opacity" from="0" to="1" begin="0.91s" dur=".7s" fill="freeze"/>
@@ -189,11 +189,23 @@
 <circle cx="38" cy="40" r="18" fill="url(#g)" fill-opacity=".18" stroke="url(#g)"/>
 <text x="38" y="46" text-anchor="middle" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="16" font-weight="800" fill="#e6edf3">Z</text>
 <text x="66" y="34" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#64748b">zyvorai</text>
+<text x="66" y="54" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="18" font-weight="700" fill="#f1f5f9">zyvor-netevd</text>
+<text x="348" y="34" text-anchor="end" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#fbbf24">★ 7</text>
+<rect x="22" y="72" width="324" height="4" rx="2" fill="#1e293b"/>
+<rect x="22" y="72" width="0" height="4" rx="2" fill="url(#g)"><animate attributeName="width" from="0" to="66" begin="1.31s" dur="1.2s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".2 .8 .2 1"/></rect>
+<text x="22" y="97" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12"><tspan fill="#4ade80">✓ 2 merged</tspan><tspan fill="#64748b">  #134 #135</tspan></text>
+</g><g opacity="0" transform="translate(792 646)">
+<animateTransform attributeName="transform" type="translate" from="792 646" to="792 630" begin="0.98s" dur=".7s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".2 .8 .2 1"/>
+<animate attributeName="opacity" from="0" to="1" begin="0.98s" dur=".7s" fill="freeze"/>
+<rect width="368" height="112" rx="14" fill="#0b1020" stroke="#1e293b" stroke-width="1"/>
+<g clip-path="url(#cc)"><rect width="368" height="112" fill="url(#shine)"><animate attributeName="x" values="-368;368;368" keyTimes="0;.3;1" dur="8s" begin="4.02s" repeatCount="indefinite"/></rect></g>
+<circle cx="38" cy="40" r="18" fill="url(#g)" fill-opacity=".18" stroke="url(#g)"/>
+<text x="38" y="46" text-anchor="middle" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="16" font-weight="800" fill="#e6edf3">Z</text>
+<text x="66" y="34" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#64748b">zyvorai</text>
 <text x="66" y="54" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="18" font-weight="700" fill="#f1f5f9">zyvor-cloud-netconfig</text>
 <text x="348" y="34" text-anchor="end" font-family="'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#fbbf24">★ 4</text>
 <rect x="22" y="72" width="324" height="4" rx="2" fill="#1e293b"/>
-<rect x="22" y="72" width="0" height="4" rx="2" fill="url(#g)"><animate attributeName="width" from="0" to="51" begin="1.31s" dur="1.2s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".2 .8 .2 1"/></rect>
+<rect x="22" y="72" width="0" height="4" rx="2" fill="url(#g)"><animate attributeName="width" from="0" to="51" begin="1.38s" dur="1.2s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".2 .8 .2 1"/></rect>
 <text x="22" y="97" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12"><tspan fill="#4ade80">✓ 3 merged</tspan><tspan fill="#64748b">  #5 #6 #7</tspan></text>
-</g><g transform="translate(792 630)"><rect width="368" height="112" rx="14" fill="none" stroke="#334155" stroke-dasharray="5 6"/>
-<text x="184.0" y="61.0" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" fill="#64748b">next PR loading<tspan>.<animate attributeName="opacity" values="0;1;1" dur="1.5s" repeatCount="indefinite"/></tspan><tspan>.<animate attributeName="opacity" values="0;0;1" dur="1.5s" repeatCount="indefinite"/></tspan></text></g>
+</g>
 </svg>
